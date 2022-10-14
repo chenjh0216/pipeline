@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'org.pathogen'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+
+    // https://mvnrepository.com/artifact/org.broadinstitute/gatk
+    implementation group: 'org.broadinstitute', name: 'gatk', version: '4.3.0.0'
+
+    // https://mvnrepository.com/artifact/edu.unc.mapseq.mapseq-modules/mapseq-module-samtools
+    implementation group: 'edu.unc.mapseq.mapseq-modules', name: 'mapseq-module-samtools', version: '0.0.6'
+
+    // https://mvnrepository.com/artifact/edu.unc.mapseq.mapseq-modules/mapseq-module-bwa
+    implementation group: 'edu.unc.mapseq.mapseq-modules', name: 'mapseq-module-bwa', version: '0.0.6'
+
+    // https://mvnrepository.com/artifact/ca.on.oicr.pde.deciders/decider-BCL2FastQ
+    implementation group: 'ca.on.oicr.pde.deciders', name: 'decider-BCL2FastQ', version: '1.0'
+
+
+
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
