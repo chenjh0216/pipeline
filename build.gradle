@@ -25,6 +25,8 @@ dependencies {
     // https://mvnrepository.com/artifact/ca.on.oicr.pde.deciders/decider-BCL2FastQ
     implementation group: 'ca.on.oicr.pde.deciders', name: 'decider-BCL2FastQ', version: '1.0'
 
+    // https://mvnrepository.com/artifact/net.java.dev.jna/jna
+    implementation group: 'net.java.dev.jna', name: 'jna', version: '5.12.1'
 
 
 
